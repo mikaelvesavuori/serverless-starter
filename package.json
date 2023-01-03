@@ -17,7 +17,7 @@
     "test:types": "npx type-coverage --at-least 97 --strict --ignore-files \"tests/**/*.ts\" --ignore-files \"*.ts\" --ignore-files \"src/application/errors/*.ts\" --ignore-files \"testdata/*.ts\"",
     "test:unit": "npx c8 -reporter=lcov ava",
     "docs": "rm -rf docs && mkdir docs && npm run docs:typedoc && npm run docs:madge",
-    "docs:madge": "npx madge --image diagrams/code-diagram.svg --exclude '(testdata|interfaces|application/errors|infrastructure/utils|config)/.{0,}.(ts|js|json)' --extensions ts src",
+    "docs:madge": "mkdir -p diagrams && npx madge --image diagrams/code-diagram.svg --exclude '(testdata|interfaces|application/errors|infrastructure/utils|config)/.{0,}.(ts|js|json)' --extensions ts src",
     "docs:typedoc": "npx typedoc --entryPoints './src' --entryPointStrategy 'expand' --exclude '**/*+(test).ts' --externalPattern '**/node_modules/**/*' --excludeExternals --out 'docs'",
     "build:hosting": "npm run docs:typedoc && cp -r diagrams docs && cp -r readme docs",
     "build": "npx sls package",
