@@ -57,3 +57,18 @@ export class MissingEnvironmentVariablesDynamoError extends Error {
     };
   }
 }
+
+/**
+ * @description Used when an input/request DTO is missing required fields.
+ */
+export class MissingRequiredInputError extends Error {
+  constructor() {
+    super();
+    this.name = 'MissingRequiredInputError';
+    const message = `Missing required fields in input!`;
+    this.message = message;
+    this.cause = {
+      statusCode: 500
+    };
+  }
+}

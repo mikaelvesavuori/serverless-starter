@@ -1,5 +1,5 @@
 /**
- * @description TODO
+ * @description Inout object when getting something.
  */
 export type SomethingRequest = {
   key: string;

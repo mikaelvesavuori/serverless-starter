@@ -76,7 +76,7 @@ export class DynamoDbRepository implements Repository {
   private async getItem(repoName: string): Promise<DynamoItems> {
     const params = {
       TableName: this.tableName,
-      KeyConditionExpression: 'pk = :pk', // TODO: "AND sk BETWEEN :from AND :to"
+      KeyConditionExpression: 'pk = :pk',
       ExpressionAttributeValues: {
         ':pk': { S: `METRICS_${repoName}` }
       }

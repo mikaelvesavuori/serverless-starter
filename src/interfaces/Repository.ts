@@ -7,12 +7,12 @@ import { SomethingInput, SomethingRequest } from './Something';
  */
 export interface Repository {
   /**
-   * @description Get metrics for a given repository and a period of time.
+   * @description Get something.
    */
   getSomething(input: SomethingRequest): Promise<CleanedItem[]>;
 
   /**
-   * @description TODO
+   * @description Add something.
    */
   addSomething(input: SomethingInput): Promise<void>;
 }
