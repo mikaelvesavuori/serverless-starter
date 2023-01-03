@@ -1,0 +1,16 @@
+# Files
+.env
+.dccache
+
+# Folders
+node_modules/
+coverage/
+jest-coverage/
+.webpack/
+lib/
+.serverless/
+docs/
+
+# Diagrams
+diagrams/*.bkp
+diagrams/*.bak
