@@ -15,17 +15,17 @@
 <path fill="none" stroke="#cfffac" d="M1210.83,-125C1210.83,-125 1092.17,-125 1092.17,-125 1088.33,-125 1084.5,-121.17 1084.5,-117.33 1084.5,-117.33 1084.5,-109.67 1084.5,-109.67 1084.5,-105.83 1088.33,-102 1092.17,-102 1092.17,-102 1210.83,-102 1210.83,-102 1214.67,-102 1218.5,-105.83 1218.5,-109.67 1218.5,-109.67 1218.5,-117.33 1218.5,-117.33 1218.5,-121.17 1214.67,-125 1210.83,-125"/>
 <text text-anchor="middle" x="1151.5" y="-109.8" font-family="Arial" font-size="14.00" fill="#cfffac">application/errors.ts</text>
 </g>
-<!-- application/makeInputDTO.ts -->
+<!-- application/makeDTO.ts -->
 <g id="node2" class="node">
-<title>application/makeInputDTO.ts</title>
-<path fill="none" stroke="#c6c5fe" d="M540.83,-125C540.83,-125 364.17,-125 364.17,-125 360.33,-125 356.5,-121.17 356.5,-117.33 356.5,-117.33 356.5,-109.67 356.5,-109.67 356.5,-105.83 360.33,-102 364.17,-102 364.17,-102 540.83,-102 540.83,-102 544.67,-102 548.5,-105.83 548.5,-109.67 548.5,-109.67 548.5,-117.33 548.5,-117.33 548.5,-121.17 544.67,-125 540.83,-125"/>
-<text text-anchor="middle" x="452.5" y="-109.8" font-family="Arial" font-size="14.00" fill="#c6c5fe">application/makeInputDTO.ts</text>
+<title>application/makeDTO.ts</title>
+<path fill="none" stroke="#c6c5fe" d="M525.83,-125C525.83,-125 379.17,-125 379.17,-125 375.33,-125 371.5,-121.17 371.5,-117.33 371.5,-117.33 371.5,-109.67 371.5,-109.67 371.5,-105.83 375.33,-102 379.17,-102 379.17,-102 525.83,-102 525.83,-102 529.67,-102 533.5,-105.83 533.5,-109.67 533.5,-109.67 533.5,-117.33 533.5,-117.33 533.5,-121.17 529.67,-125 525.83,-125"/>
+<text text-anchor="middle" x="452.5" y="-109.8" font-family="Arial" font-size="14.00" fill="#c6c5fe">application/makeDTO.ts</text>
 </g>
-<!-- application/makeInputDTO.ts&#45;&gt;application/errors.ts -->
+<!-- application/makeDTO.ts&#45;&gt;application/errors.ts -->
 <g id="edge1" class="edge">
-<title>application/makeInputDTO.ts&#45;&gt;application/errors.ts</title>
-<path fill="none" stroke="#757575" d="M548.59,-113.5C688.23,-113.5 946.03,-113.5 1074.13,-113.5"/>
-<polygon fill="#757575" stroke="#757575" points="1074.24,-117 1084.24,-113.5 1074.24,-110 1074.24,-117"/>
+<title>application/makeDTO.ts&#45;&gt;application/errors.ts</title>
+<path fill="none" stroke="#757575" d="M533.79,-113.5C669.33,-113.5 941.68,-113.5 1074.36,-113.5"/>
+<polygon fill="#757575" stroke="#757575" points="1074.44,-117 1084.44,-113.5 1074.44,-110 1074.44,-117"/>
 </g>
 <!-- infrastructure/adapters/web/AddSomething.ts -->
 <g id="node3" class="node">
@@ -33,11 +33,11 @@
 <path fill="none" stroke="#c6c5fe" d="M279.33,-145C279.33,-145 7.67,-145 7.67,-145 3.83,-145 0,-141.17 0,-137.33 0,-137.33 0,-129.67 0,-129.67 0,-125.83 3.83,-122 7.67,-122 7.67,-122 279.33,-122 279.33,-122 283.17,-122 287,-125.83 287,-129.67 287,-129.67 287,-137.33 287,-137.33 287,-141.17 283.17,-145 279.33,-145"/>
 <text text-anchor="middle" x="143.5" y="-129.8" font-family="Arial" font-size="14.00" fill="#c6c5fe">infrastructure/adapters/web/AddSomething.ts</text>
 </g>
-<!-- infrastructure/adapters/web/AddSomething.ts&#45;&gt;application/makeInputDTO.ts -->
+<!-- infrastructure/adapters/web/AddSomething.ts&#45;&gt;application/makeDTO.ts -->
 <g id="edge2" class="edge">
-<title>infrastructure/adapters/web/AddSomething.ts&#45;&gt;application/makeInputDTO.ts</title>
-<path fill="none" stroke="#757575" d="M287.21,-124.2C307.12,-122.91 327.28,-121.59 346.32,-120.35"/>
-<polygon fill="#757575" stroke="#757575" points="346.73,-123.83 356.48,-119.69 346.27,-116.85 346.73,-123.83"/>
+<title>infrastructure/adapters/web/AddSomething.ts&#45;&gt;application/makeDTO.ts</title>
+<path fill="none" stroke="#757575" d="M287.21,-124.2C312.31,-122.57 337.8,-120.91 360.97,-119.4"/>
+<polygon fill="#757575" stroke="#757575" points="361.34,-122.88 371.09,-118.74 360.88,-115.9 361.34,-122.88"/>
 </g>
 <!-- infrastructure/frameworks/end.ts -->
 <g id="node4" class="node">
@@ -159,11 +159,11 @@
 <path fill="none" stroke="#c6c5fe" d="M278.83,-196C278.83,-196 8.17,-196 8.17,-196 4.33,-196 0.5,-192.17 0.5,-188.33 0.5,-188.33 0.5,-180.67 0.5,-180.67 0.5,-176.83 4.33,-173 8.17,-173 8.17,-173 278.83,-173 278.83,-173 282.67,-173 286.5,-176.83 286.5,-180.67 286.5,-180.67 286.5,-188.33 286.5,-188.33 286.5,-192.17 282.67,-196 278.83,-196"/>
 <text text-anchor="middle" x="143.5" y="-180.8" font-family="Arial" font-size="14.00" fill="#c6c5fe">infrastructure/adapters/web/GetSomething.ts</text>
 </g>
-<!-- infrastructure/adapters/web/GetSomething.ts&#45;&gt;application/makeInputDTO.ts -->
+<!-- infrastructure/adapters/web/GetSomething.ts&#45;&gt;application/makeDTO.ts -->
 <g id="edge7" class="edge">
-<title>infrastructure/adapters/web/GetSomething.ts&#45;&gt;application/makeInputDTO.ts</title>
-<path fill="none" stroke="#757575" d="M220.03,-172.98C242.01,-168.46 265.8,-162.41 287,-154.5 304.15,-148.1 305.71,-140.51 323,-134.5 330.83,-131.78 339.05,-129.41 347.39,-127.34"/>
-<polygon fill="#757575" stroke="#757575" points="348.27,-130.73 357.22,-125.05 346.68,-123.91 348.27,-130.73"/>
+<title>infrastructure/adapters/web/GetSomething.ts&#45;&gt;application/makeDTO.ts</title>
+<path fill="none" stroke="#757575" d="M220.03,-172.98C242.01,-168.46 265.8,-162.41 287,-154.5 304.15,-148.1 305.71,-140.51 323,-134.5 335.17,-130.27 348.28,-126.88 361.32,-124.17"/>
+<polygon fill="#757575" stroke="#757575" points="362.12,-127.58 371.26,-122.23 360.78,-120.71 362.12,-127.58"/>
 </g>
 <!-- infrastructure/adapters/web/GetSomething.ts&#45;&gt;infrastructure/frameworks/end.ts -->
 <g id="edge8" class="edge">

@@ -3,7 +3,7 @@ import { MikroLog } from 'mikrolog';
 
 import { GetSomethingUsecase } from '../../../usecases/GetSomethingUsecase';
 
-import { makeRequestDTO } from '../../../application/makeInputDTO';
+import { makeRequestDTO } from '../../../application/makeDTO';
 
 import { EventInput } from '../../../interfaces/Lambda';
 

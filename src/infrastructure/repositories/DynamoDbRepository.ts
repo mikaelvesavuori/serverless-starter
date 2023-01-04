@@ -49,21 +49,20 @@ export class DynamoDbRepository implements Repository {
   }
 
   /**
-   * @description Add something.
+   * @description Add something. Sets a timestamp as the sort key.
    */
   public async addSomething(input: SomethingInput) {
     const { something } = input;
-    const key = 'SOMEKEY';
 
     const params = {
-      ExpressionAttributeValues: {
-        ':p': { N: '1' },
-        ':start_value': { N: '0' }
-      },
-      UpdateExpression: 'SET p = if_not_exists(p, :start_value) + :p'
+      TableName: this.tableName,
+      Item: {
+        pk: { S: something },
+        sk: { S: `${Math.floor(Date.now() / 1000)}` }
+      }
     };
 
-    await this.updateItem(key, something, params);
+    await this.updateItem(something, something, params);
   }
 
   /**
@@ -73,12 +72,13 @@ export class DynamoDbRepository implements Repository {
   /**
    * @description Get data from DynamoDB.
    */
-  private async getItem(repoName: string): Promise<DynamoItems> {
+  private async getItem(key: string): Promise<DynamoItems> {
     const params = {
       TableName: this.tableName,
-      KeyConditionExpression: 'pk = :pk',
+      KeyConditionExpression: 'pk = :pk AND sk > :sk',
       ExpressionAttributeValues: {
-        ':pk': { S: `METRICS_${repoName}` }
+        ':pk': { S: key },
+        ':sk': { S: '1' }
       }
     };
 
@@ -117,19 +117,7 @@ export class DynamoDbRepository implements Repository {
  */
 const testDataItem = [
   {
-    chf: { N: '67' },
-    rt: { N: '5313' },
-    d: { N: '50' },
-    ad: { N: '67' },
-    pt: { N: '1413' },
-    cl: { N: '33' },
-    cm: { N: '40' },
-    m: { N: '29' },
-    chr: { N: '60' },
-    o: { N: '58' },
-    p: { N: '23' },
-    ap: { N: '22' },
-    sk: { S: '20221115' },
-    pk: { S: 'METRICS_SOMEORG/SOMEREPO' }
+    pk: { S: 'some-item' },
+    sk: { S: '20221115' }
   }
 ];
