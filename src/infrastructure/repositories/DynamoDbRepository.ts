@@ -118,6 +118,6 @@ export class DynamoDbRepository implements Repository {
 const testDataItem = [
   {
     pk: { S: 'some-item' },
-    sk: { S: '20221115' }
+    sk: { S: '1672822070' }
   }
 ];
